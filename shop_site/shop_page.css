@@ -1,0 +1,40 @@
+
+body {
+	padding: 0;
+
+}
+
+#store_icons{
+	max-height: 200px;
+	max-width:200px;
+}
+
+
+
+
+section#main{
+	background-color: rgba(252,251,243,0.7);
+	margin: 0 0 2em;
+	padding: inline-block;
+	border-radius: 2em;
+	box-shadow:1px 1px 5px #777 ;
+}
+section div.panel{
+	float: left;
+	position: relative;
+	width: 250px;
+	margin: 0 0.5em 2em .5em;
+	padding:1em;
+	background-color: #fff;
+	border: #ccc solid 1px;
+	border-radius: 0.6em ;
+}
+section div.panel img.cheeseType{
+	width: 100% ;
+}
+
+div.clear{      /* this might be in the wrong spot */
+	clear:both;
+	font-size: 1%;
+}
+
