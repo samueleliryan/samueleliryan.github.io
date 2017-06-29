@@ -87,7 +87,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p>Want to get in touch with me? Fill out the form below to send me a message and I will try to get back to you within 24 hours!</p>
+                <p>Want to get in touch with me? Fill out the form below to send me a message and I will try to get back to you within 2400 hours!</p>
                 <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
                 <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
                 <!-- NOTE: To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
@@ -95,15 +95,19 @@
                 <form  action="https://formspree.io/your@email.com"
       method="POST" > <!-- line below goes in <form> name="sentMessage" id="contactForm" novalidate -->
 
+
+<!-- enter your name bar -->
      <input type="text" id="cname" class="form-control" name="Name:" placeholder="Name" required="" data-validation-required-message="Please enter your name." aria-invalid="false" style="margin: 5px;">
 
                                 <p class="help-block text-danger"></p>
-                            
+            <!-- the email enter bar -->                
      <input type=" mail" id="cemail" name="Email:" class="form-control" placeholder="Your E-mail" required="" data-validation-required-message="Please enter your email address." style="margin: 5px;">
                                 <p class="help-block text-danger"></p>
-                            
+    <!-- the message bar -->                        
      <textarea class="form-control" id="cmessage" name="Message:" rows="7" placeholder="Message" required="" data-validation-required-message="Please enter your message." style="margin: 5px;"></textarea>
                                 <p class="help-block text-danger"></p>
+<!-- the submit button -->
+    <input type="submit" class="btn btn-round btn-g" value="Send" style="margin: 5px;">
 
 
 
