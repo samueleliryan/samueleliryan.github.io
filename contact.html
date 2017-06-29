@@ -91,16 +91,22 @@
                 <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
                 <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
                 <!-- NOTE: To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
+               
                 <form  action="https://formspree.io/your@email.com"
-      method="POST" name="sentMessage" id="contactForm" novalidate>
+      method="POST" > <!-- line below goes in <form> name="sentMessage" id="contactForm" novalidate -->
+
+     <input type="text" id="cname" class="form-control" name="Name:" placeholder="Name" required="" data-validation-required-message="Please enter your name." aria-invalid="false" style="margin: 5px;">
+
+                                <p class="help-block text-danger"></p>
+                            
+     <input type=" mail" id="cemail" name="Email:" class="form-control" placeholder="Your E-mail" required="" data-validation-required-message="Please enter your email address." style="margin: 5px;">
+                                <p class="help-block text-danger"></p>
+                            
+     <textarea class="form-control" id="cmessage" name="Message:" rows="7" placeholder="Message" required="" data-validation-required-message="Please enter your message." style="margin: 5px;"></textarea>
+                                <p class="help-block text-danger"></p>
 
 
-        <input type="text" name="name">
-    <input type="email" name="_replyto">
-    <input type="submit" value="Send">
 
-
-    
                    <!-- <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
                             <label>Name</label>
