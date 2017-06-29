@@ -93,7 +93,15 @@
                 <!-- NOTE: To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
                 <form  action="https://formspree.io/your@email.com"
       method="POST" name="sentMessage" id="contactForm" novalidate>
-                    <div class="row control-group">
+
+
+        <input type="text" name="name">
+    <input type="email" name="_replyto">
+    <input type="submit" value="Send">
+
+
+    
+                   <!-- <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
                             <label>Name</label>
                             <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
@@ -127,7 +135,7 @@
                         <div class="form-group col-xs-12">
                             <button type="submit" class="btn btn-default">Send</button>
                         </div>
-                    </div>
+                    </div> -->
                 </form>
             </div>
         </div>
