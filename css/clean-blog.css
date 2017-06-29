@@ -26,6 +26,7 @@ h2{
   font-size:1.7em;
   margin: 0.5em 0 03.5em 0;
   padding:0;
+  font-family:'Shrikhand', cursive;
 
 }
 h3,
@@ -442,4 +443,8 @@ img::-moz-selection {
 }
 body {
   -webkit-tap-highlight-color: #0085A1;
+}
+
+#ram_eng{
+font-family: 'Black Ops One', cursive;
 }
