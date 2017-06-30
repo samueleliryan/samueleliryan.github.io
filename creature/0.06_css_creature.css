@@ -1,0 +1,253 @@
+
+
+body {
+	float: left;
+	width: 75%;
+	height: 75%;
+}
+
+#person{
+
+z-index: 1;
+
+width: 225px;
+height:200px;
+background-color: rgb(245,250,50);
+border:solid 2px black;
+
+position:fixed;
+top:245px;
+left:260px;
+
+
+border-top-right-radius:75px;
+border-top-left-radius: 75px;
+}
+
+
+
+
+#leftlense{
+/*below is all the sizing of the left lense*/
+width: 70px;
+height:60px;
+margin: 50px;
+border-radius: 55px 26px 100px 40px;
+background-color: #2c2c2d ;
+border:solid 3px black;
+z-index: 1;
+
+
+/*left lense location*/
+position: fixed;
+top: 80px;
+left: 255px;
+
+} 
+
+
+#rightlense{
+
+
+/*below is all the sizing of the left lense*/
+width: 70px;
+height:60px;
+margin: 50px;
+border-radius: 26px 55px 40px 100px;/*topL:55px topR:26px botR:83px botL:40px*/
+background-color: #2c2c2d ;
+border:solid 3px black;
+z-index: 1;
+
+
+/*left lense location*/
+position: fixed;
+top: 80px;
+left: 325px;
+
+} 
+
+#bridge{
+
+z-index: 2;
+
+width: 40px;
+height: 35px;
+background-color: #2c2c2d;
+border-top:solid 3px black;
+
+position: fixed;
+top: 130px;
+left: 355px;
+
+;
+
+}
+
+#head{
+
+
+z-index:2 ;
+
+width: 150px;
+height:200px;
+background-color: yellow ;
+border-top:solid 3px black;
+border-left:solid 3px black ;
+border-right:solid 3px black;
+
+/*border-right-color: transparent;*/ /*interesting line of code, could be helpful*/
+
+/*leave these two numbers the same to keep the head even*/
+border-bottom-right-radius: 75px;
+border-bottom-left-radius:75px;
+
+/*leave these two numbers the same to keep the head even*/
+border-top-right-radius: 30px;
+border-top-left-radius:30px;
+
+position: fixed;
+left: 300px;
+top: 100px;
+}
+
+
+/* below is breather code */
+
+
+#breather{
+
+width: 50px;
+height:50px;
+background-color: silver;
+
+z-index: 3 ;
+
+
+border:solid 2px black;
+border-radius: 45px;
+
+
+border-bottom-color: grey;
+border-top-color: silver;
+
+position:fixed;
+top: 215px;
+left: 350px;
+
+}
+
+
+
+/* below is breather detail code */
+
+
+#outer_breatherL{
+  
+z-index: 3;
+
+
+height: 45px;
+width:4px;
+background-color: grey;
+border:solid 1px black;
+
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+
+position: fixed;
+left: 360px;
+top: 218px;
+}
+#outer_breatherR{
+  
+z-index: 3;
+
+
+height: 45px;
+width:4px;
+background-color: grey;
+border:solid 1px black;
+
+border-top-right-radius : 10px;
+border-bottom-right-radius: 10px;
+
+position: fixed;
+left: 388px;
+top: 218px;
+}
+#inner_breather{
+  
+z-index: 3;
+
+
+height: 52px;
+width:4px;
+background-color: grey;
+border:solid 1px black;
+
+
+border-top-left-radius : 10px;
+border-top-right-radius : 10px;
+
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+
+position: fixed;
+left: 375px;
+top: 215px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#test{
+
+height: 100px;
+width:100px;
+background-color: red
+border:solid 1px black;
+
+	transform:skewX(25deg);
+
+position: fixed;
+top: 200px
+left:100px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*use this code if you can */
+
+
+
+}
+
+
+
+
+h3 {
+	float: left;
+
+}

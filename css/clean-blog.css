@@ -448,3 +448,12 @@ body {
 #ram_eng{
 font-family: 'Black Ops One', cursive;
 }
+
+.proj_photo:hover{
+  /* look up how to change cursor to hand icon */
+  cursor: default;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+

@@ -29,6 +29,7 @@ div.panel{
 	padding: 10px;
 	font-family: 'Shrikhand', cursive;
 	display: block; 
+
 }
 
 div.clear{      /* this might be in the wrong spot */
@@ -95,6 +96,8 @@ p{
 	size: 8px;
 	background-color: #e5e5e5;
 	margin-bottom: 1px;
+	max-width: 75%;
+
 
 }
 
@@ -128,6 +131,7 @@ body {
 	padding: 2px;
 	padding-left: 10px;
 
+
 }
 
 #more_info{
@@ -136,11 +140,26 @@ body {
 	border-radius: 5px;
 }
 
-.col{
+.col-md{
 	background-color: #e5e5e5;
+	margin-left: 15px;
+	max-width: 75%;
 }
 
 .store_icons{
-	width: 50%;
-	height: 50%;
+	width: 90%;
+	height: 90%;
+	padding-right: 10px ;
+	padding-left: 10px;
+}
+
+#sidebar{
+	width:20%;
+	float: right;
+	position: relative;
+	display: block;
+	background-color: #fff;
+	padding: 1.7em 0 3em 1.5em;
+	border-left: red solid 5px;
+
 }
