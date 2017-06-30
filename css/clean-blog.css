@@ -54,8 +54,16 @@ section div.panel{
   background-color: #fff;
   border: #ccc solid 1px;
   border-radius: 0.6em ;
+
+
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 90%;
+  /* above must add to 100% */
+
+
 }
-section div.panel img.cannon{
+section div.panel img.proj_photo{
   width: 100% ;
 }
 
@@ -449,10 +457,12 @@ body {
 font-family: 'Black Ops One', cursive;
 }
 
-.proj_photo:hover{
+.panel:hover{
   /* look up how to change cursor to hand icon */
   cursor: default;
  
 }
-.proj_photo{
+
+.button {
+  margin-left: 20px;
 }
