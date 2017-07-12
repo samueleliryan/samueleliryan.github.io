@@ -30,21 +30,20 @@ p {
   line-height: 1.4em;
   margin: 0.5em 0 0..75em 0;
   padding:10px;
+  margin-top: 45px;
 }
 
 }
 p a {
   text-decoration: underline;
 }
-h1,{
-  margin: 5px,5px,5px,5px ;
-}
 h2{
   color:  #556B2F ;
   font-size:1.7em;
-  margin: 5px, 10px, 5px, 10px;
+  margin-left: 30px;
   padding:0;
-  font-family:'Shrikhand', cursive;
+  font-family: 'Lobster', cursive;
+  position: absolute;
 
 }
 h3,
@@ -232,7 +231,7 @@ hr.small {
   .intro-header .site-heading,
   .intro-header .post-heading,
   .intro-header .page-heading {
-    padding: 150px 0;
+    margin: 150px 0;
   }
 }
 .intro-header .site-heading,
@@ -241,15 +240,34 @@ hr.small {
 }
 .intro-header .site-heading h1,
 .intro-header .page-heading h1 {
-  margin-top: 0;
+  margin-top: 50px;
   font-size: 50px;
+  font-family: 'Lobster', cursive;
+  color: white;
 }
+  /* could break shit , zoom code */
+
+ #intro_text,h2:hover {
+  max-width: 100%;
+  
+  -moz-transition: all 0.7s;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+
+#intro_text, h2:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
 .intro-header .site-heading .subheading,
 .intro-header .page-heading .subheading {
   font-size: 24px;
   line-height: 1.1;
   display: block;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Lobster', cursive;
   font-weight: 300;
   margin: 10px 0 0;
   color: white ;
@@ -513,5 +531,15 @@ margin-left: 10vw;
 }
 
 .intro-header{
-  top: 50px;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+#bout_me{
+  background-color: #6B8E23 ;
+  padding: inline-block;
+  border-radius: 2em;
+  box-shadow:1px 1px 5px #777 ; 
 }
