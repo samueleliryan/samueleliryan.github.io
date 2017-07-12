@@ -87,11 +87,8 @@ section div.panel img.proj_photo{
   width: 100% ;
   margin-left: 5px;
 
-  width: 100px;
-  height: 100px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  overflow: hidden;
+}
+
 
 
 /* Set the image to fill its parent and make transparent */
@@ -489,12 +486,14 @@ margin-top: 300px;
 #ram_eng{
 font-family: 'Black Ops One', cursive;
 margin-left: 5px;
+margin-left: 10vw;
 }
 
 
 #jav_game{
 font-family: 'Black Ops One', cursive;
 margin-left: 5px;
+margin-left: 10vw;
 }
 
 .button {
@@ -504,6 +503,3 @@ margin-left: 5px;
 .panel{
   max-width: 80%;
 }
-
-
-
