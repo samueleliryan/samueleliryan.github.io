@@ -6,7 +6,7 @@
 body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 20px;
-  color: #333333;
+  color: #FFFEF1;
 }
    hr { 
         display: block;
@@ -31,6 +31,7 @@ p {
   margin: 0.5em 0 0..75em 0;
   padding:10px;
   margin-top: 45px;
+  color: #6E8D18;
 }
 
 }
@@ -59,7 +60,6 @@ section#main{
   background-color: #6B8E23 ;
   margin: 0 0 10px;
   padding: inline-block;
-  border-radius: 2em;
   box-shadow:1px 1px 5px #777 ;
 }
 section div.panel{
@@ -72,8 +72,6 @@ section div.panel{
   padding:1em;
   background-color: #fff;
   border: #ccc solid 1px;
-  border-radius: 0.6em ;
-
 
   margin-left: 5%;
   margin-right: 5%;
@@ -86,7 +84,22 @@ section div.panel img.proj_photo{
   width: 100% ;
   margin-left: 5px;
 
+
+ -webkit-filter: blur(3px); /* Safari 6.0 - 9.0 */
+  filter: blur(3px);
+
+
+  -webkit-transition-property: blur, 3s; /* For Safari 3.1 to 6.0 */
+  transition-property: blur, 3s;
 }
+
+section div.panel img.proj_photo:hover {
+  filter: blur(0);
+  -webkit-filter: blur(0px);
+
+
+}
+
 
 
 
@@ -540,6 +553,18 @@ margin-left: 10vw;
 #bout_me{
   background-color: #6B8E23 ;
   padding: inline-block;
-  border-radius: 2em;
   box-shadow:1px 1px 5px #777 ; 
+}
+
+#bout_me_inner{
+  background-color: #FFFEF1
+}
+
+#contact_me{
+  background-color: #6B8E23 ;
+  padding: inline-block;
+  box-shadow:1px 1px 5px #777 ; 
+}
+#contact_me_inner{
+  background-color: #FFFEF1
 }
