@@ -12,45 +12,33 @@
     <title>Portfolio Page</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Theme CSS -->
-    <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link href="css/clean-blog.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
         <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
      <!-- ADDED custom fonts (same as shop_index -- >
-        <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Bungee+Inline|Lobster|Permanent+Marker|Shrikhand" rel="stylesheet"  >
-
+     
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.js"></script>
     <![endif]-->
 
 </head>
 
 <body>
 
-<!-- <style> code is off ? dunno how to fit into CSS page -->
+<!-- <style> this section controls the page breaks -->
 <style>
-    hr { 
-        display: block;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        margin-left: 10%;
-        margin-right: 10%;
-        border-style: double;
-        border-width: 3px;
-        color: black ;
-        color-top: black;
-        height: 10px;
-    } 
+ 
 </style>
 
 
@@ -75,9 +63,7 @@
                     <li>
                         <a href="about.html">About</a>
                     </li>
-                    <li>
-                        <a href="post.html">PLACEHOLDER</a>
-                    </li>
+                    <!-- add here for more tabs -->
                     <li>
                         <a href="contact.html">Contact</a>
                     </li>
@@ -90,28 +76,24 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" position = static  style="background-image: url('img/main_bg.jpg')">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="site-heading">
-                        <h1>Welcome to </h1>
-                        <hr class="small">
-                        <span class="subheading">A custom showcase of coding ability
-                </div>
-            </div>
-        </div>
+    <header>
+        
+        
     </header>
+
+
+
+
 
     <!-- Main Content -->
    <!--  <div class="container"> 
         <div class="row">         also apart of large blue code -->
      <section id="main">
-        <div class="panel">
-                <a href="creature/0.06_css_creature.html" target="_blank"><img src="img/css_creature_blur.jpg"  alt="meme" border="0" ></a>
+        <div class="panel" id="css_creat">
+                <img src="img/css_creature_blur.jpg"  alt="meme" border="0" ></a>
             <h2>CSS creature project </h2>
             <p>This is the first CSS "creature" I made, I modeled it after a hazmat suit. I hope to use the character concept in an upcoming game</p>
-            <button>Click here to learn more </button>
+            <a href="https://codepen.io/Samueleliryan/pen/bRYGge?editors=0100" target="_blank"><button>Click here to see it in action</button></a>
           </div>
     <hr>
 
@@ -119,15 +101,14 @@
             <a href="shop_site/shop_index.html" target="_blank"><img src="img/shop_page_blur.jpg"   alt="meme" border="0" ></a>
             <h2>Shop site - Ram Engineering</h2>
             <p>This is my first custom made from scratch website i made to showcase an engineering product site. Someday I might actually buy a domain for it and run an online shop through it for custom potato cannons</p>
-            <a href="shop_site/shop_index.html"><button href="shop_site/shop_index.html">Click here to learn more </button></a>
+            <a href="shop_site/shop_index.html"><button href="shop_site/shop_index.html">Click here to see it in action </button></a>
           </div>
     <hr>
-         <div class="panel">
-            <img src="img/placeholder_200.jpg" class="proj_photo" alt="meme" border="0" 
-            >
-            <h2>Proj 3 </h2>
-            <p>ccccccccccc.</p>
-            <button>Click here to learn more </button>
+         <div class="panel" id="jav_game">
+            <a href="JAV_GAME_LINK/index.html" target="_blank"><img src="img/placeholder_200.jpg" class="proj_photo" alt="meme" border="0"></a>
+            <h2>HTML java game </h2>
+            <p>This was my first attempt at a java coded game, based off a skeleton online.</p>
+            <a href="JAV_GAME_LINK/index.html" target="_blank"><button>Click here to play </button></a>
           </div>
 <!--
          <div class="panel">
@@ -157,7 +138,7 @@
 
                 <ul class="pager">
                     <li class="next">
-                        <a href="#">Older Posts &rarr;</a>
+                        <a href="#">Go to top &rarr;</a>
                     </li>
                 </ul>
            <!-- </div>  goes with above blue code -->
@@ -204,17 +185,17 @@
     </footer>
 
     <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.js"></script>
 
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
 
     <!-- Theme JavaScript -->
-    <script src="js/clean-blog.min.js"></script>
+    <script src="js/clean-blog.js"></script>
 
 </body>
 

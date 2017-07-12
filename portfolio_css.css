@@ -1,0 +1,86 @@
+/* true CSS page, we can fix this */
+
+
+body {
+    background-image: url('img/indy_skyline.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    align-content: center;
+}
+
+h1{
+	font-size:48px;
+	padding: 5px;
+	font-family:'Shrikhand', cursive;
+	
+
+	/* positioning */
+	position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+}
+
+
+#title_box{
+	width: 100vh;
+	height: 50vh;
+	color: red;
+}
+
+#title{
+	margin:0;
+	border:0;
+
+	height:20vh ;
+	width: 30vw;
+
+	padding: 5px;
+	background-color: grey;
+}
+
+#back_img{
+  width: 100vw;
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  
+}
+
+.panels{
+	background-color: grey;
+}
+
+#daddy_div{
+	background-color: grey;
+	opacity: 50%;
+	border-radius: 5px;
+}
+
+.container{
+	font-size: 20px;
+}
+
+
+
+
+hr {         
+	display: block;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 10%;
+	margin-right: 20%;
+	border-style: double;
+
+	border-right: transparent;
+	border-left: transparent;
+
+	border-top-color: black;
+
+	border-width: 3px;
+	color: black;
+	height: 10px;
+  	}
+

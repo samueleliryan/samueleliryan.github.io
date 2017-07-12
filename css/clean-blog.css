@@ -8,23 +8,41 @@ body {
   font-size: 20px;
   color: #333333;
 }
+   hr { 
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 20%;
+        margin-right: 20%;
+        border-style: double;
+
+        border-right: transparent;
+        border-left: transparent;
+
+        border-color: white;
+
+        border-width: 3px;
+        height: 10px;
+    } 
 
 p {
   font-size: 1.2em;
   line-height: 1.4em;
   margin: 0.5em 0 0..75em 0;
-  padding:10em
+  padding:10px;
 }
 
 }
 p a {
   text-decoration: underline;
 }
-h1,
+h1,{
+  margin: 5px,5px,5px,5px ;
+}
 h2{
-  color: #745b2f;
+  color:  #556B2F ;
   font-size:1.7em;
-  margin: 0.5em 0 03.5em 0;
+  margin: 5px, 10px, 5px, 10px;
   padding:0;
   font-family:'Shrikhand', cursive;
 
@@ -33,31 +51,33 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 800;
 }
 /* this is probably the panel code.... maybe....*/
 
 section#main{
-  background-color: rgba(252,251,243,0.7);
-  margin: 0 0 2em;
+  background-color: #6B8E23 ;
+  margin: 0 0 10px;
   padding: inline-block;
   border-radius: 2em;
   box-shadow:1px 1px 5px #777 ;
 }
 section div.panel{
-  float: left;
   position: relative;
-  width: 250px;
-  margin: 0 0.5em 2em .5em;
+  width: 75%;
+
+ 
+  margin-right: 10px !important;
+
   padding:1em;
   background-color: #fff;
   border: #ccc solid 1px;
   border-radius: 0.6em ;
 
 
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
   width: 90%;
   /* above must add to 100% */
 
@@ -65,7 +85,16 @@ section div.panel{
 }
 section div.panel img.proj_photo{
   width: 100% ;
-}
+  margin-left: 5px;
+
+  width: 100px;
+  height: 100px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+
+/* Set the image to fill its parent and make transparent */
 
 
 
@@ -80,7 +109,10 @@ a:focus {
 }
 a img:hover,
 a img:focus {
-  cursor: zoom-in;
+  /* cool effect: -webkit-filter: blur(3px); */
+  -webkit-filter: drop-shadow(8px 8px 10px red); /* Safari */
+    filter: drop-shadow(8px 8px 10px grey);
+  cursor: pointer;
 }
 blockquote {
   color: #777777;
@@ -191,20 +223,12 @@ hr.small {
     transform: translate3d(0, 100%, 0);
   }
 }
-.intro-header {
-  background-color: #777777;
-  background: no-repeat center center;
-  background-attachment: scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  margin-bottom: 50px;
+
 }
 .intro-header .site-heading,
 .intro-header .post-heading,
 .intro-header .page-heading {
-  padding: 100px 0 50px;
+  padding: 100px 100px 50px 10px;
   color: white;
 }
 @media only screen and (min-width: 768px) {
@@ -231,6 +255,7 @@ hr.small {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
   margin: 10px 0 0;
+  font-color:white ;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading h1,
@@ -453,16 +478,32 @@ body {
   -webkit-tap-highlight-color: #0085A1;
 }
 
-#ram_eng{
+/* coding for portfolio panels individual */
+
+#css_creat{
 font-family: 'Black Ops One', cursive;
+margin-left: 5px;
+margin-top: 300px;
 }
 
-.panel:hover{
-  /* look up how to change cursor to hand icon */
-  cursor: default;
- 
+#ram_eng{
+font-family: 'Black Ops One', cursive;
+margin-left: 5px;
+}
+
+
+#jav_game{
+font-family: 'Black Ops One', cursive;
+margin-left: 5px;
 }
 
 .button {
   margin-left: 20px;
 }
+
+.panel{
+  max-width: 80%;
+}
+
+
+
