@@ -16,7 +16,7 @@ Hero.prototype = Object.create(Phaser.Sprite.prototype);
 Hero.prototype.constructor = Hero;
 
 Hero.prototype.move = function (direction) {
-    const SPEED = 200;
+    const SPEED = 300;
     this.body.velocity.x = direction * SPEED;
 
     if (this.body.velocity.x < 0) {
@@ -79,6 +79,7 @@ function Spider(game, x, y) {
 }
 
 Spider.SPEED = 100;
+Spider.SPEEDL = 70;
 
 Spider.prototype = Object.create(Phaser.Sprite.prototype);
 Spider.prototype.constructor = Spider;
@@ -88,7 +89,7 @@ Spider.prototype.update = function () {
         this.body.velocity.x = -Spider.SPEED; 
     }
     else if (this.body.touching.left || this.body.blocked.left) {
-        this.body.velocity.x = Spider.SPEED;
+        this.body.velocity.x = Spider.SPEEDL;
     }
 };
 
