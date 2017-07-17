@@ -335,8 +335,18 @@ PlayState._createHud = function () {
     this.hud.position.set(10, 10);
 };
 
+myAudio = new Audio('audio/bgm.mp3'); 
+myAudio.addEventListener('ended', function() {
+    this.currentTime = 0;
+    this.play();
+}, false);
+myAudio.play();
+
+
 window.onload = function () {
     let game = new Phaser.Game(960, 600, Phaser.AUTO, 'game');
     game.state.add('play', PlayState);
     game.state.start('play', true, false, {level: 0});
 };
+
+
