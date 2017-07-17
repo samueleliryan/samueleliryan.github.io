@@ -382,6 +382,8 @@ footer {
 footer .list-inline {
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100%;
 }
 footer .copyright {
   font-size: 14px;
@@ -616,4 +618,9 @@ button:hover {
   background-size:cover ;
 
 
+}
+
+#linked_logo{
+  width: 25px;
+  height:25px;
 }
