@@ -335,7 +335,7 @@ PlayState._createHud = function () {
     this.hud.position.set(10, 10);
 };
 
-myAudio = new Audio('JAV_GAME_LINK/audio/bgm.mp3'); 
+myAudio = new Audio('audio/bgm.mp3'); 
 myAudio.addEventListener('ended', function() {
     this.currentTime = 0;
     this.play();
