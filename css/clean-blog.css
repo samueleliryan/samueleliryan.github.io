@@ -624,3 +624,8 @@ button:hover {
   width: 25px;
   height:25px;
 }
+
+#top_nav{
+  background: rgba(107, 142, 35,0.4) /* Green background with 40% opacity */
+  
+}
