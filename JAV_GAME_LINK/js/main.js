@@ -28,7 +28,7 @@ Hero.prototype.move = function (direction) {
 };
 
 Hero.prototype.jump = function () {
-    const JUMP_SPEED = 600;
+    const JUMP_SPEED = 650;
     let canJump = this.body.touching.down;
 
     if (canJump) {
@@ -78,7 +78,7 @@ function Spider(game, x, y) {
     this.body.velocity.x = Spider.SPEED;
 }
 
-Spider.SPEED = 100;
+Spider.SPEED = 130;
 Spider.SPEEDL = 70;
 
 Spider.prototype = Object.create(Phaser.Sprite.prototype);
@@ -121,7 +121,7 @@ PlayState.init = function (data) {
         }
     }, this);
 
-    this.coinPickupCount = 0;
+    
     this.hasKey = false;
     this.level = (data.level || 0) % LEVEL_COUNT;
 };
