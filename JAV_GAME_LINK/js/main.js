@@ -121,7 +121,7 @@ PlayState.init = function (data) {
         }
     }, this);
 
-    
+    this.coinPickupCount = 0;
     this.hasKey = false;
     this.level = (data.level || 0) % LEVEL_COUNT;
 };
@@ -174,6 +174,7 @@ PlayState.update = function () {
     this._handleInput();
     this.coinFont.text = `x${this.coinPickupCount}`;
     this.keyIcon.frame = this.hasKey ? 1 : 0;
+  
 };
 
 PlayState._handleCollisions = function () {
@@ -309,6 +310,8 @@ PlayState._onHeroVsKey = function (hero, key) {
     key.kill();
     this.hasKey = true;
 };
+
+
 
 PlayState._onHeroVsDoor = function (hero, door) {
     this.sfx.door.play();
